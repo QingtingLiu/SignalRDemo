@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace SignalRTest2
+namespace SignalRTest
 {
     public class BundleConfig
     {

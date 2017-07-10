@@ -5,7 +5,7 @@ using System.Web;
 using Microsoft.AspNet.SignalR;
 using Microsoft.AspNet.SignalR.Hubs;
 
-namespace SignalRTest2
+namespace SignalRTest
 {
     [HubName("chatHub")]
     public class ChatHub : Hub

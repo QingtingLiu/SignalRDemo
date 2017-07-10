@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace SignalRTest2
+namespace SignalRTest
 {
     public class FilterConfig
     {

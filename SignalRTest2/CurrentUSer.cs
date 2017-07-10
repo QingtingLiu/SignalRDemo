@@ -1,4 +1,4 @@
-﻿namespace SignalRTest2
+﻿namespace SignalRTest
 {
     public class CurrentUSer
     {

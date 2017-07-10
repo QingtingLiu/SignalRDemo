@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using Microsoft.AspNet.SignalR;
 using WebGrease.Css.Extensions;
 
-namespace SignalRTest2.Controllers
+namespace SignalRTest.Controllers
 {
     public class HomeController : Controller
     {

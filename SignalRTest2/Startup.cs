@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(SignalRTest2.Startup))]
+[assembly: OwinStartup(typeof(SignalRTest.Startup))]
 
-namespace SignalRTest2
+namespace SignalRTest
 {
     public class Startup
     {
