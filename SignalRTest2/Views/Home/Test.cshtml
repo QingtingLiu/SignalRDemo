@@ -1,0 +1,58 @@
+﻿@{
+    Layout = null;
+}
+
+<html>
+<head>
+</head>
+<body>
+
+    <input type="button" id="btn" value="Connect" />
+    <input type="button" id="logOut" value="Exit" />
+
+</body>
+</html>
+
+<script src="~/Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="~/Scripts/jquery.signalR-2.2.2.min.js" type="text/javascript"></script>
+<script src="/signalr/hubs" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $(function () {
+        var chatHub = $.connection.chatHub;
+        registerEvents(chatHub);
+        $.connection.hub.start().done(function () {
+            registerClientMethods(chatHub);
+        });
+    });
+
+    function registerClientMethods(chatHub) {
+        $("#btn").click(function () {
+            var url = "aaaaaaaaa";
+            chatHub.server.connect(url, "1111");
+        });
+        $("#logOut").click(function () {
+            chatHub.server.exit("111");
+        });
+    }
+
+    function registerEvents(chatHub) {
+        chatHub.client.onConnected = function (id, userId, url) {
+            console.log("与服务器建立了链接" + url);
+        }
+
+        chatHub.client.onUserDisconnected = function (id, userId) {
+            console.log("与服务器取消了链接");
+        }
+        chatHub.client.onNewUserConnected = function (id, userId) {
+            alert("新用户完成为合法");
+        }
+        chatHub.client.onExistUserConnected = function (id, userId) {
+            alert("用户" + userId + "不能重复登陆");
+        }
+
+        chatHub.client.onExit = function (id, userId) {
+            alert("用户" + userId + "成功退出！");
+        }
+    }
+</script>
