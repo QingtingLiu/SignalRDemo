@@ -168,6 +168,5 @@ G:\Git_Livia\SignalRDemo\SignalRTest\bin\zh-Hans\System.Web.Razor.resources.dll
 G:\Git_Livia\SignalRDemo\SignalRTest\bin\zh-Hans\System.Web.WebPages.resources.dll
 G:\Git_Livia\SignalRDemo\SignalRTest\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 G:\Git_Livia\SignalRDemo\SignalRTest\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-G:\Git_Livia\SignalRDemo\SignalRTest\obj\Debug\SignalRTest.csprojResolveAssemblyReference.cache
 G:\Git_Livia\SignalRDemo\SignalRTest\obj\Debug\SignalRTest.dll
 G:\Git_Livia\SignalRDemo\SignalRTest\obj\Debug\SignalRTest.pdb
