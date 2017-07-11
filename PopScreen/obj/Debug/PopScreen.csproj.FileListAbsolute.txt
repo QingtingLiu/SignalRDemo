@@ -145,3 +145,17 @@ G:\Git_Livia\SignalRDemo\PopScreen\bin\zh-Hans\System.Web.WebPages.Deployment.re
 G:\Git_Livia\SignalRDemo\PopScreen\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
 G:\Git_Livia\SignalRDemo\PopScreen\obj\Debug\PopScreen.dll
 G:\Git_Livia\SignalRDemo\PopScreen\obj\Debug\PopScreen.pdb
+G:\Git_Livia\SignalRDemo\PopScreen\bin\Microsoft.AspNet.SignalR.Core.dll
+G:\Git_Livia\SignalRDemo\PopScreen\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+G:\Git_Livia\SignalRDemo\PopScreen\bin\Microsoft.Owin.dll
+G:\Git_Livia\SignalRDemo\PopScreen\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\Git_Livia\SignalRDemo\PopScreen\bin\Microsoft.Owin.Security.dll
+G:\Git_Livia\SignalRDemo\PopScreen\bin\Owin.dll
+G:\Git_Livia\SignalRDemo\PopScreen\bin\Microsoft.AspNet.SignalR.Core.xml
+G:\Git_Livia\SignalRDemo\PopScreen\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+G:\Git_Livia\SignalRDemo\PopScreen\bin\Microsoft.Owin.xml
+G:\Git_Livia\SignalRDemo\PopScreen\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\Git_Livia\SignalRDemo\PopScreen\bin\Microsoft.Owin.Security.xml
+G:\Git_Livia\SignalRDemo\PopScreen\bin\zh-Hans\Microsoft.AspNet.SignalR.Core.resources.dll
+G:\Git_Livia\SignalRDemo\PopScreen\bin\zh-Hans\Microsoft.AspNet.SignalR.SystemWeb.resources.dll
+G:\Git_Livia\SignalRDemo\PopScreen\obj\Debug\PopScreen.csprojResolveAssemblyReference.cache

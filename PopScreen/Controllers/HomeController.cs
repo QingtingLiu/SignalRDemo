@@ -26,5 +26,10 @@ namespace PopScreen.Controllers
 
             return View();
         }
+
+        public ActionResult PopScreen()
+        {
+            return View();
+        }
     }
 }
