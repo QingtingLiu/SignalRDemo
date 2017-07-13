@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Web API页面实时请求监控</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>Web API Request Logs</h1>
+    <div>
+        <input type="button" value="start" id="btnStart" />
+        <input type="button" value="stop" id="btnStop" />
+        <input type="button" value="clear" id="btnClear" />
+    </div>
+    <ul id="requests"></ul>
+    <script src="/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="/Scripts/jquery.signalR-2.2.2.min.js"></script>
+    <script>
+        $(function () {
+            var requests = $("#requests");
+            var startButton = $("#btnStart");
+            var stopButton = $("#btnStop");
+            var connection = null;
+
+            enable(stopButton, false);
+            enable(startButton, true);
+
+            startButton.click(function () {
+                startConnection();
+                enable(stopButton, true);
+                enable(startButton, false);
+            });
+
+            $("#btnClear").click(function () {
+                $("#requests").children().remove();
+            });
+
+            stopButton.click(function () {
+                stopConnection();
+                enable(stopButton, false);
+                enable(startButton, true);
+            });
+
+            function startConnection() {
+                stopConnection();
+                connection = $.connection("/monitor");
+                connection.start()
+                    .fail(function () {
+                        console.log("connect failed");
+                    });
+                connection.received(function (data) {
+                    data = data.replace(/\r\n/g, "<br/>");
+                    data = data.replace(/\n/g, "<br/>");
+                    requests.append("<li>" + data + "</li>");
+                });
+            }
+
+            function stopConnection() {
+                if (connection != null) {
+                    connection.stop();
+                }
+            }
+
+            function enable(button, enabled) {
+                if (enabled) {
+                    button.removeAttr("disabled");
+                }
+                else {
+                    button.attr("disabled", "disabled");
+                }
+            }
+        });
+    </script>
+</body>
+</html>
